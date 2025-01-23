@@ -16,12 +16,15 @@ public class StackOne {
         // Peek
         System.out.println("Top element (peek): " + stack.peek());
 
+//        confirm no item was removed
+        System.out.println("Stack after push operations: " + stack);
+
         // Pop
         int poppedElement = stack.pop();
         System.out.println("Popped element: " + poppedElement);
         System.out.println("Stack after pop operation: " + stack);
 
-        // Check if the stack is empty
+        // isEmpty
         System.out.println("Is the stack empty? " + stack.isEmpty());
 
         // Search for an element in the stack
