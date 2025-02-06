@@ -1,4 +1,13 @@
 package dsa.trees.tree1;
 
-public class Node {
+class Node {
+    int value;
+    Node left;
+    Node right;
+
+    Node(int value) {
+        this.value = value;
+        left = right = null;
+    }
 }
+

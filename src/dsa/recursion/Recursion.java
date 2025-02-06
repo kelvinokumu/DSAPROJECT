@@ -1,4 +1,4 @@
-package dsa.basic.loops;
+package dsa.recursion;
 
 public class Recursion {
     public static void main(String[] args) {

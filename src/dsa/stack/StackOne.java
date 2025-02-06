@@ -16,7 +16,7 @@ public class StackOne {
         // Peek
         System.out.println("Top element (peek): " + stack.peek());
 
-//        confirm no item was removed
+        // confirm no item was removed
         System.out.println("Stack after push operations: " + stack);
 
         // Pop
