@@ -15,26 +15,26 @@ class BinaryTree {
         parent.right = new Node(value);
     }
 
-    void printInOrder(Node node) {
+    void displayInOrder(Node node) {
         if (node != null) {
-            printInOrder(node.left);
+            displayInOrder(node.left);
             System.out.print(node.value + " ");
-            printInOrder(node.right);
+            displayInOrder(node.right);
         }
     }
 
-    void printPreOrder(Node node) {
+    void displayPreOrder(Node node) {
         if (node != null) {
             System.out.print(node.value + " ");
-            printPreOrder(node.left);
-            printPreOrder(node.right);
+            displayPreOrder(node.left);
+            displayPreOrder(node.right);
         }
     }
 
-    void printPostOrder(Node node) {
+    void displayPostOrder(Node node) {
         if (node != null) {
-            printPostOrder(node.left);
-            printPostOrder(node.right);
+            displayPostOrder(node.left);
+            displayPostOrder(node.right);
             System.out.print(node.value + " ");
         }
     }
@@ -47,15 +47,15 @@ class BinaryTree {
         tree.addRightChild(tree.root.left, 5);
 
         System.out.println("In-order traversal of the binary tree:");
-        tree.printInOrder(tree.root);
+        tree.displayInOrder(tree.root);
         System.out.println();
 
         System.out.println("Pre-order traversal of the binary tree:");
-        tree.printPreOrder(tree.root);
+        tree.displayPreOrder(tree.root);
         System.out.println();
 
         System.out.println("Post-order traversal of the binary tree:");
-        tree.printPostOrder(tree.root);
+        tree.displayPostOrder(tree.root);
         System.out.println();
     }
 }

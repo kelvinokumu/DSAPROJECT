@@ -1,6 +1,6 @@
 package dsa.trees.tree2;
 
-class BST {
+class BinarySearchTree {
     TreeNode root;
 
     // Insert method to maintain Binary Search Tree order
