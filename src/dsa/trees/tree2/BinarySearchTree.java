@@ -3,7 +3,7 @@ package dsa.trees.tree2;
 class BST {
     TreeNode root;
 
-    // Insert method to maintain BST order
+    // Insert method to maintain Binary Search Tree order
     TreeNode insert(TreeNode root, int val) {
         if (root == null) {
             return new TreeNode(val);
@@ -25,7 +25,7 @@ class BST {
         }
     }
 
-    // Inorder traversal (Left, Root, Right) - Outputs sorted values
+    // Inorder traversal (Left, Root, Right)
     void inorder(TreeNode root) {
         if (root != null) {
             inorder(root.left);
@@ -34,10 +34,39 @@ class BST {
         }
     }
 
-    // Wrapper method for inorder traversal
+    // Preorder traversal (Root, Left, Right)
+    void preorder(TreeNode root) {
+        if (root != null) {
+            System.out.print(root.val + " ");
+            preorder(root.left);
+            preorder(root.right);
+        }
+    }
+
+    // Postorder traversal (Left, Right, Root)
+    void postorder(TreeNode root) {
+        if (root != null) {
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.val + " ");
+        }
+    }
+
+    // Wrapper for all Traversal methods
     void inorderTraversal() {
         inorder(root);
         System.out.println();
     }
+
+    void preorderTraversal() {
+        preorder(root);
+        System.out.println();
+    }
+
+    void postorderTraversal() {
+        postorder(root);
+        System.out.println();
+    }
+
 }
 
