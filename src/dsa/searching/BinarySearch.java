@@ -14,7 +14,7 @@ public class BinarySearch {
             if (arr[mid] > target)
                 return binarySearch(arr, left, mid - 1, target);
 
-            // Otherwise, search the right subarray
+            // search the right subarray
             return binarySearch(arr, mid + 1, right, target);
         }
         return -1;  // Element not found

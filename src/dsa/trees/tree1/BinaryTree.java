@@ -50,6 +50,7 @@ class BinaryTree {
         tree.displayInOrder(tree.root);
         System.out.println();
 
+        System.out.println("Pre-order used to make a copy og the tee");
         System.out.println("Pre-order traversal of the binary tree:");
         tree.displayPreOrder(tree.root);
         System.out.println();
