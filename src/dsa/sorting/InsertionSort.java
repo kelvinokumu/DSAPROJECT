@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class InsertionSort {
     public static void insertionSort(int[] inputArray) {
-
         for (int i = 1; i < inputArray.length; i++) {
-            int key = inputArray[i];  // Element to be inserted
+            // Element to be inserted
+            int key = inputArray[i];
             int j = i - 1;
 
             // Move elements that are greater than key one position ahead
@@ -15,7 +15,8 @@ public class InsertionSort {
                 inputArray[j + 1] = inputArray[j];
                 j--;
             }
-            inputArray[j + 1] = key;  // Insert the key at the correct position
+            // Insert the key at the correct position
+            inputArray[j + 1] = key;
         }
     }
 
@@ -28,8 +29,8 @@ public class InsertionSort {
         int[] arr = new int[size];
 
         for (int i = 0; i < arr.length; i++) {
-
-            arr[i] = rand.nextInt(1000);
+//            insert the values in the array
+            arr[i] = rand.nextInt(100);
         }
 
         System.out.println("Original Array:");
@@ -46,6 +47,17 @@ public class InsertionSort {
             System.out.print(num + " ");
         }
         System.out.println();
+
+//        for(int i = 0;i < arr.length;i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.println();
+    }
+
+    public static int getInputs(){
+//        get array inputs and return the
+//        values (size and random)
+        return 0;
     }
 }
 
