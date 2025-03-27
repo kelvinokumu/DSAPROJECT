@@ -12,7 +12,6 @@ public class Question1 {
         int max = findLargest(numbers);
         System.out.println("Largest Number: " + max);
 
-//      System.out.println("Largest Number: " + findLargest(numbers));
     }
 
     public static int findLargest(List<Integer> numbers) {

@@ -4,7 +4,7 @@ public class QuickSort {
 
     // Partition function to place pivot at correct position
     public static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];  // Choose the last element as pivot
+        int pivot = arr[high];  // last element as pivot
         int i = low - 1;  // Pointer for the smaller element
 
         for (int j = low; j < high; j++) {
@@ -28,14 +28,14 @@ public class QuickSort {
         }
     }
 
-    // Utility function to swap two elements
+    // swap two elements
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
 
-    // Main function to test the algorithm
+    // Main function
     public static void main(String[] args) {
         int[] arr = {10, 7, 8, 9, 1, 5};
         System.out.println("Original array:");
@@ -47,7 +47,7 @@ public class QuickSort {
         printArray(arr);
     }
 
-    // Utility function to print array
+    // Display values
     public static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num + " ");

@@ -13,8 +13,10 @@ public class SelectionSort
             int minIndex = i;
 
             // Find the index of the minimum element in the unsorted part
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) {
+            for (int j = i + 1; j < n; j++)
+            {
+                if (arr[j] < arr[minIndex])
+                {
                     minIndex = j;
                 }
             }
@@ -23,7 +25,10 @@ public class SelectionSort
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
+
+            System.out.println("Some Sorted array: " + Arrays.toString(arr));
         }
+
     }
 
     public static void main(String[] args) {
